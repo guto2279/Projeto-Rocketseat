@@ -53,3 +53,33 @@ let opcao = "sair"
             case "sair":
                 return
         }
+
+# modulos em nodejs 
+
+npm install require //importa as dependências require
+
+const { select } = require('@inquire/prompts') // importando select dos objetos
+
+## Programação Assincrona e promessas
+const start = async() => { 
+    while(true){
+        const opcao = await select({
+            message: "Menu >",
+            choices: [
+            {
+                name: "Cadastrar metas",
+                value: "cadastrar"
+            },
+            {
+                name: "Listar metas",
+                value: "listar"
+            },
+            {
+                name: "Sair",
+                value: "sair"
+            }
+        ]
+
+        })
+        
+        

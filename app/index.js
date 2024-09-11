@@ -1,31 +1,18 @@
-// Hello world 
-
-let mensagem = "Váriavel"
-const msg = "Constante"
-console.log(mensagem);
-console.log(msg);
-
-
-// arrays
-
-let array1 = ["guto", "Wesley"]
-
-console.log(array1[0] + ", " + array1[1])
-
-//objeto
-
-let meta = {
-    value: 'Ler um livro todo mês',
-    checked: false
-} //chaves significa um objeto
-
-console.log(meta.value)
-
-
-//function // arrow Function
-
-const criarMeta = () => {
-
+function start(){
+    let count = 0 
+    while(true){
+        let opcao = "sair"
+        switch(opcao){
+            case "cadastrar":
+                console.log('Vamos cadastrar')
+                break
+            case "listar":
+                console.log('Vamos Listar')
+                break
+            case "sair":
+                return
+        }
+    }
 }
 
-//function criarMeta(){}  outro estilo de função
+start()

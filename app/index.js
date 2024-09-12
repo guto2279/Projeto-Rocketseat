@@ -20,7 +20,7 @@ const listarMetas = async () => {
         instructions: false,
     })
 
-    if(espostas.length == 0){
+    if(respostas.length == 0){
         console.log("Nenhuma meta selecionada!")
         return
     } 
